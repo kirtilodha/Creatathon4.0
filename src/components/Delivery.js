@@ -1,41 +1,77 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Delivery(props) {
+
+  const showToast = ()=>{
+    //create a function to display a success message
+    toast.success('Successfully submitted!',{
+      position: toast.POSITION.TOP_RIGHT
+    });
+  }
   return (
-    <div className="mt-16 mb-20">
-      <h2 className="mb-10">Make a delivery</h2>
-      <div className="grid grid-cols-2 mb-10">
-        <div>
-          <form className="text-2xl">
-            <label>
-              <span className="mr-5 font-extrabold">Bed No. :</span>
-              <input type="text" id="first_name" className="w-84 h-8 px-2 font-semibold bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg" />
+    <div className="cardd ">
+    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
+          <div className="w-full p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
+              <h1 className="text-3xl font-semibold text-center text-purple-700 underline">
+                 Sign in
+              </h1>
+              <form className="mt-6">
+                  <div className="mb-2">
+                      <label
+                          for="email"
+                          className="block text-sm font-semibold text-gray-800"
+                      >
+                          Email
+                      </label>
+                      <input
+                          type="email"
+                          className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                      />
+                  </div>
+                  <div className="mb-2">
+                      <label
+                          for="password"
+                          className="block text-sm font-semibold text-gray-800"
+                      >
+                          Password
+                      </label>
+                      <input
+                          type="password"
+                          className="block w-full px-4 py-2 mt-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                      />
+                  </div>
+                  <a
+                      href="#"
+                      className="text-xs text-purple-600 hover:underline"
+                  >
+                      Forget Password?
+                  </a>
+                  <div className="mt-6">
+                      <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+                          Login
+                      </button>
+                  </div>
+              </form>
 
-              {/* <input className="rounded-lg w-52 h-14" type="text" name="name" /> */}
-            </label>
-          </form>
-        </div>
-        <div>
-            
-          <form className="text-2xl">
-            <label>
-                
-            <span className="mr-5 font-extrabold">Choose Medicine:</span>
-              
-              <select className="w-40 h-10 p-2 font-semibold bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg">
-                <option value="grapefruit">Paracetamol 650</option>
-                <option value="lime">Disprine</option>
-                <option value="coconut">Eye Drops</option>
-                <option value="mango">Crocin</option>
-              </select>
-            </label>
-          </form>
-        </div>
-      </div>
-
-      <Button variant="primary" className="w-36 h-12">Submit</Button>
+              <p className="mt-8 text-xs font-light text-center text-gray-700">
+                  {" "}
+                  Don't have an account?{" "}
+                  <a
+                      href="#"
+                      className="font-medium text-purple-600 hover:underline"
+                  >
+                      Sign up
+                  </a>
+              </p>
+          </div>
     </div>
+    {/* <span onClick={()=>setShowModal(!showModal)} className="bg-transparent text-white opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"> */}
+       {/* × */}
+     {/* </span> */}
+  </div>
   );
 }
 

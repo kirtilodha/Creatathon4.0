@@ -9,20 +9,20 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App h-full bg-gradient-to-r from-orange-100 to-orange-400">
+    <div className="App h-full">
       <Navbar />
       <Introduction />
-      <Delivery />
+      {/* <Delivery />
       <Appointment />
-      <Schedule />
+      <Schedule /> */}
       <HashRouter>
-      {/* <Navbar /> */}
+      {/*  */}
         <div className="content">
           <Routes>
             <Route exact path="/" component={Introduction} />
-            <Route path="/delivery" component={Delivery} />
-            <Route path="/appoint" component={Appointment} />
-            <Route path="/schedule" component={Schedule} />
+            {/* <Route path="/delivery" component={Delivery} /> */}
+            {/* <Route path="/appoint" component={Appointment} />
+            <Route path="/schedule" component={Schedule} /> */}
           </Routes>
         </div>
       </HashRouter>

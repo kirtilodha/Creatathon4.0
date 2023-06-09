@@ -2,6 +2,7 @@ import React from "react";
 import robo from "../images/robocut.png";
 
 function Introduction(props) {
+
   return (
     <div>
       <div class="grid grid-cols-2">
