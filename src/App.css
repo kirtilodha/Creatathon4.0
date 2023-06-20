@@ -176,6 +176,8 @@ a:hover {
 .modal-content:focus {
   outline: 1px solid #ccc;
   box-shadow: 0 0 4px #e8a1ad;
+  color: #0a0606;
+
 }
 
 .btn {
@@ -217,7 +219,7 @@ label {
   min-width: 230px;
   padding: 8px;
   width: 100%;
-  color: #fff;
+  color: #0a0606;
 }
 
 .bigger {

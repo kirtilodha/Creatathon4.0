@@ -41,10 +41,10 @@ function BasicExample() {
  <h1 id="modal_title">Schedule</h1>
  <form>
    <label for="name">Source:</label>
-   <input type="text" id="name" class="input" placeholder="Starting point" />
+   <input type="text" id="name" class="input" placeholder="Starting point" style={{color:"black"}}/>
 
    <label for="email">Destination:</label>
-   <input type="email" id="email" class="input" placeholder="Ending point" />
+   <input type="email" id="email" class="input" placeholder="Ending point" style={{color:"black"}}/>
 
    <input style={{color:"white"}} onClick={()=> alert("Your form has been submitted!")} class='btn' value="Submit Form" />
  </form>
