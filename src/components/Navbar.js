@@ -34,9 +34,9 @@ function BasicExample() {
     {showModal && 
     <div class="modal-overlay" id="modal_window"
     aria-hidden={!showModal} role="dialog"
-    aria-labelledby="modal_title">
+    aria-labelledby="modal_title" >
 
-<div class="modal-content" id="modal_holder" role="document">
+<div class="modal-content" id="modal_holder" role="document" style={{border:"1px solid #4f4d4d", background:"#493d3d63"}}>
 
  <h1 id="modal_title">Schedule</h1>
  <form>
@@ -46,7 +46,7 @@ function BasicExample() {
    <label for="email">Destination:</label>
    <input type="email" id="email" class="input" placeholder="Ending point" />
 
-   <input onClick={()=> alert("Your form has been submitted!")} class='btn' value="Submit Form" />
+   <input style={{color:"white"}} onClick={()=> alert("Your form has been submitted!")} class='btn' value="Submit Form" />
  </form>
 
 <button class="btn-close " id="modal_close" onClick={() => setShowModal(!showModal)}  type="button" aria-label="close">
@@ -62,10 +62,10 @@ function BasicExample() {
     aria-hidden={!showModall} role="dialog"
     aria-labelledby="modal_title">
 
-<div class="modal-content" id="modal_holder" role="document">
+<div class="modal-content" id="modal_holder" role="document" style={{border:"1px solid #4f4d4d", background:"#493d3d63", padding:"15px"}}>
 
  <h1 id="modal_title">Track your parcel</h1>
- <div className="google-map-code">
+ <div className="google-map-code" style={{margin:"10px"}}>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.2444061131414!2d77.5659113694713!3d12.909159606422032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156310100001%3A0x71be53da4480fbbe!2sDayananda%20Sagar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1683747333947!5m2!1sen!2sin" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
